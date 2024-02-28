@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+
+{%block title%}
+Home
+{%endblock title%}
+
+{% block body %}
+<div class="index-page">
+<div class="wrapper">
+  <div class="page-header header-filter">
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="container">
+      <div class="content-center brand">
+        <h1 class="h1-seo">SparkMind{AI}</h1>
+        <h3>"Chill, Learn, Innovate"</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="landing-page">
+<div class="wrapper">
+    <div class="page-header">
+      <img src="static/assets/img/blob.png" class="path">
+      <img src="static/assets/img/path2.png" class="path2">
+      <img src="static/assets/img/triunghiuri.png" class="shapes triangle">
+      <img src="static/assets/img/waves.png" class="shapes wave">
+      <img src="static/assets/img/patrat.png" class="shapes squares">
+      <img src="static/assets/img/cercuri.png" class="shapes circle">
+      <div class="content-center">
+        <div class="row row-grid justify-content-between align-items-center text-left">
+          <div class="col-lg-6 col-md-6">
+            <h1 class="text-white">Study Smartly with 
+              <br/>
+              <span class="text-white">GenAI</span>
+            </h1>
+            <p class="text-white mb-3">India's website GenAI Study platform. Learn with your own ask question to AI. Deepdive into any topic. </p>
+            <div class="btn-wrapper mb-3">
+              <p class="category text-success d-inline">Get Started for free</p>
+              <a href="/signin" class="btn btn-success btn-link btn-sm"><i class="tim-icons icon-minimal-right"></i></a>
+            </div>
+            <div class="btn-wrapper">
+              <div class="button-container">
+                <button href="javascript:void(0)" class="btn btn-icon btn-simple btn-round btn-neutral">
+                  <i class="fab fa-twitter"></i>
+                </button>
+                <button href="javascript:void(0)" class="btn btn-icon btn-simple btn-round btn-neutral">
+                  <i class="fab fa-dribbble"></i>
+                </button>
+                <button href="javascript:void(0)" class="btn btn-icon btn-simple btn-round btn-neutral">
+                  <i class="fab fa-facebook"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <img src="static/assets/img/space.png" width="600" height="1500" alt="Circle image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>  
+    
+    <section class="section section-lg section-safe">
+      <div class="container">
+        <div class="row row-grid justify-content-between">
+          <div class="col-md-5">
+            <img src="static/assets/img/chester-wade.jpg" class="img-fluid floating">
+            <div class="card card-stats bg-danger">
+              <div class="card-body">
+                <div class="justify-content-center">
+                  <div class="numbers">
+                    <p class="card-title">Smart</p>
+                    <p class="card-category text-white">Q&A</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-stats bg-info">
+              <div class="card-body">
+                <div class="justify-content-center">
+                  <div class="numbers">
+                    <p class="card-title">Personalize</p>
+                    <p class="card-category text-white">Learning Recommendations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-stats bg-default">
+              <div class="card-body">
+                <div class="justify-content-center">
+                  <div class="numbers">
+                    <p class="card-title">Smart</p>
+                    <p class="card-category text-white">Quizzes & Grading</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="px-md-5">
+              <hr class="line-success">
+              <h3>Awesome features</h3>
+              <p>Sparkmind is an online university fostering mission-driven learning for impactful careers, with a focus on financial education and community building.</p>
+              <ul class="list-unstyled mt-5">
+                <li class="py-2">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-success mb-2">
+                      <i class="tim-icons icon-vector"></i>
+                    </div>
+                    <div class="ml-3">
+                      <h6>Interactive Q&A with Generative AI:</h6>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-success mb-2">
+                      <i class="tim-icons icon-tap-02"></i>
+                    </div>
+                    <div class="ml-3">
+                      <h6>Personalized Learning Recommendations</h6>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-success mb-2">
+                      <i class="tim-icons icon-single-02"></i>
+                    </div>
+                    <div class="ml-3">
+                      <h6>Smart Quizzes with Auto Grading</h6>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+    
+{% endblock body %}

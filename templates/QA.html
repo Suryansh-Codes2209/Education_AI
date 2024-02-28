@@ -1,0 +1,83 @@
+{% extends "base1.html" %}
+
+
+{%block title%}
+Q&A
+{%endblock title%}
+
+{% block body %}
+<div class="register-page">
+  <div class="wrapper">
+    <div class="page-header">
+      <div class="page-header-image"></div>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-6 offset-lg-0 offset-md-3">
+              <div id="square7" class="square square-7"></div>
+              <div id="square8" class="square square-8"></div>
+              <div class="card card-register">
+                <div class="card-header">
+                  <img class="card-img" src="static/assets/img/square1.png" alt="Card image">
+                  <h4 class="card-title">Q&A</h4>
+                </div>
+                <div class="card-body">
+                  <form class="form" method="post">
+                    {% csrf_token %}
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="tim-icons icon-planet"></i>
+                        </div>
+                      </div>
+                      <input type="text" name="user-input1" class="form-control" placeholder="Your Question" style="height:200px;font-size:14pt;">
+                    </div>  
+                    <div class="card-footer">
+                      <button type="submit" class="btn btn-info btn-round btn-lg">Answer</a>
+                    </div>
+                  </form>
+                </div>
+               
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-md-6 offset-lg-0 offset-md-3">
+              <div class="card card-register" >
+                <div class="card-header">
+                  <ul class="nav nav-tabs nav-tabs-primary" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#link4" role="tablist">
+                        Generated Answer
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <!-- Tab panes -->
+                  <div class="tab-content tab-space">
+                    <div class="tab-pane active" id="link4">
+                      {%if response%}
+                      <p id="tts">{{response|safe}}</p>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="register-bg"></div>
+          <div id="square1" class="square square-1"></div>
+          <div id="square2" class="square square-2"></div>
+          <div id="square3" class="square square-3"></div>
+          <div id="square4" class="square square-4"></div>
+          <div id="square5" class="square square-5"></div>
+          <div id="square6" class="square square-6"></div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+{%endblock body %}

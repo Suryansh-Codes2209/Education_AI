@@ -1,0 +1,107 @@
+{% extends "base1.html" %}
+
+
+{%block title%}
+Welcome
+{%endblock title%}
+
+{% block body %}
+<div class="landing-page">
+<section class="section section-lg section-coins">
+    <img src="static/assets/img/path3.png" class="path">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <hr class="line-info">
+          <h1>Welcome, {{ member.Name }} 🚀<br>
+            <span class="text-info">Start your journey</span>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-coin card-plain">
+            <div class="card-header">
+              <img src="static/assets/img/qa.png" class="img-center img-fluid">
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h4 class="text-uppercase">Smart Q&A</h4>
+                  <span>Ask the question</span>
+                  <hr class="line-primary">
+                </div>
+              </div>
+              <div class="row">
+                <ul class="list-group">
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <a href="/QA">
+              <button class="btn btn-primary btn-simple">Let's go</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-coin card-plain">
+            <div class="card-header">
+              <img src="static/assets/img/quiz.png" class="img-center img-fluid">
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h4 class="text-uppercase">Smart Quizes</h4>
+                  <span>Auto Grading</span>
+                  <hr class="line-success">
+                </div>
+              </div>
+              <div class="row">
+                <ul class="list-group">
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-success btn-simple">let's go</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-coin card-plain">
+            <div class="card-header">
+              <img src="static/assets/img/cs.png" class="img-center img-fluid">
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h4 class="text-uppercase">Coming Soon</h4>
+                  <span>Waiting</span>
+                  <hr class="line-info">
+                </div>
+              </div>
+              <div class="row">
+                <ul class="list-group">
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-info btn-simple">Wait..</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{%endblock body%}
